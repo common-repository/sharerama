@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="utf-8">
+	<title>Sharerama</title>
+  <link id="styles_sharerama" href="../../sharerama.css" rel="stylesheet">
+
+<script>
+</script>
+
+	<!--[if lt IE 9]>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<![endif]-->
+	<!--[if gte IE 9]><!-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<!--<![endif]-->
+	<script src="../../sharerama.js"></script>
+
+<style>
+body {
+	margin:0;
+	padding:20px;
+	font-family:Arial;
+	}
+table {
+	border-collapse:collapse;
+	}
+td {
+	padding:0 40px;
+  vertical-align: top;
+	}
+.dark-bg {
+	margin:0 -20px;
+	padding:20px;
+	background:#333;
+	}
+section {
+	margin-bottom:10px;
+	}
+.skin-switcher {
+	margin-bottom:40px;
+	}
+.skin-switcher a {
+	display:inline-block;
+	}
+:target {
+	color:inherit;
+	text-decoration:none;
+	font-weight:bold;
+	cursor:none;
+	}
+.show-grid .grid {
+	border-left:1px solid hsla(0,0%,0%,.2);
+	}
+</style>
+
+</head>
+<body class="skin_classic">
+
+	<div class="grid">
+
+	<h3>Standard</h3>
+	<div class="social-likes" data-url="http://mail.ru/">
+		<a class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</a>
+		<a class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" title="Опубликовать ссылку в Твиттере">Twitter</a>
+		<a class="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</a>
+		<a class="vkontakte" title="Опубликовать ссылку во Вконтакте">Вконтакте</a>
+		<a class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках">Одноклассники</a>
+		<a class="plusone" title="Опубликовать ссылку в Гугл-плюсе">Google+</a>
+		<!--<div class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Пинтересте">Pinterest</div>-->
+	</div>
+
+	<h3>Standard (dark background)</h3>
+	<div class="dark-bg">
+		<div class="social-likes" data-url="http://mail.ru/">
+			<div data-service="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</div>
+			<div data-service="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" title="Опубликовать ссылку в Твиттере">Twitter</div>
+			<div data-service="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</div>
+			<div data-service="vkontakte" title="Опубликовать ссылку во Вконтакте">Вконтакте</div>
+			<div data-service="odnoklassniki" title="Опубликовать ссылку в Одноклассниках">Одноклассники</div>
+			<div data-service="plusone" title="Опубликовать ссылку в Гугл-плюсе">Google+</div>
+			<!--<div data-service="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Пинтересте">Pinterest</div>-->
+		</div>
+	</div>
+
+	<h3>Standard (light)</h3>
+	<ul class="social-likes social-likes_light" data-url="http://mail.ru/">
+		<button class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</button>
+		<button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" title="Опубликовать ссылку в Твиттере">Twitter</button>
+		<button class="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</button>
+		<button class="vkontakte" title="Опубликовать ссылку во Вконтакте">Вконтакте</button>
+		<button class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках">Одноклассники</button>
+		<button class="plusone" title="Опубликовать ссылку в Гугл-плюсе">Google+</button>
+		<!--<button class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Пинтересте">Pinterest</button>-->
+	</ul>
+
+  <h3>Standard (light, dark background)</h3>
+  <div class="dark-bg">
+    <ul class="social-likes social-likes_light" data-url="http://mail.ru/">
+      <button class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</button>
+      <button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" title="Опубликовать ссылку в Твиттере">Twitter</button>
+      <button class="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</button>
+      <button class="vkontakte" title="Опубликовать ссылку во Вконтакте">Вконтакте</button>
+      <button class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках">Одноклассники</button>
+      <button class="plusone" title="Опубликовать ссылку в Гугл-плюсе">Google+</button>
+      <!--<button class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Пинтересте">Pinterest</button>-->
+    </ul>
+  </div>
+
+  <h3>Standard (no color)</h3>
+	<div class="social-likes social-likes_nocolor" data-url="http://mail.ru/">
+		<button class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</button>
+		<button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" title="Опубликовать ссылку в Твиттере">Twitter</button>
+		<button class="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</button>
+		<button class="vkontakte" title="Опубликовать ссылку во Вконтакте">Вконтакте</button>
+		<button class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках">Одноклассники</button>
+		<button class="plusone" title="Опубликовать ссылку в Гугл-плюсе">Google+</button>
+		<!--<div class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Пинтересте">Pinterest</div>-->
+	</div>
+
+  <h3>Standard (light, no color)</h3>
+	<ul class="social-likes social-likes_light social-likes_nocolor" data-url="http://mail.ru/">
+		<button class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</button>
+		<button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" title="Опубликовать ссылку в Твиттере">Twitter</button>
+		<button class="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</button>
+		<button class="vkontakte" title="Опубликовать ссылку во Вконтакте">Вконтакте</button>
+		<button class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках">Одноклассники</button>
+		<button class="plusone" title="Опубликовать ссылку в Гугл-плюсе">Google+</button>
+		<!--<button class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Пинтересте">Pinterest</button>-->
+	</ul>
+
+
+<table>
+	<tr>
+		<td style="vertical-align:top">
+			<h3>Vertical</h3>
+			<ul class="social-likes social-likes_vertical" data-url="http://sapegin.github.io/social-likes/" data-title="Свой текст">
+				<a class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebooоk</a>
+				<a class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" data-url="http://github.com" data-title="Не #mail_ru" title="Опубликовать ссылку в Твиттере">Twitter</a>
+				<a class="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</a>
+				<a class="vkontakte" title="Опубликовать ссылку во Вконтакте">Вконтакте</a>
+				<a class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках">Одноклассники</a>
+				<a class="plusone" title="Плюсануть в Гугле">Google+</a>
+				<!--<button class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Pinterest">Pinterest</button>-->
+			</ul>
+		</td>
+		<td style="padding-left:40px;vertical-align:top">
+			<h3>Vertical (dark background)</h3>
+			<div class="dark-bg">
+				<ul class="social-likes social-likes_vertical" data-url="http://sapegin.github.io/social-likes/" data-title="Свой текст">
+					<button class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</button>
+					<button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" data-url="http://github.com" data-title="Не #mail_ru" title="Опубликовать ссылку в Твиттере">Twitter</button>
+					<button class="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</button>
+					<button class="vkontakte" title="Опубликовать ссылку во Вконтакте">Вконтакте</button>
+					<button class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках">Одноклассники</button>
+					<button class="plusone" title="Плюсануть в Гугле">Google+</button>
+					<!--<button class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Pinterest">Pinterest</button>-->
+				</ul>
+			</div>
+		</td>
+		<td style="vertical-align:top; 	padding-left:40px">
+			<h3>Vertical (light)</h3>
+			<ul class="social-likes social-likes_vertical social-likes_light" data-url="http://sapegin.github.io/social-likes/" data-title="Свой текст">
+				<a class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</a>
+				<a class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" data-url="http://github.com" data-title="Не #mail_ru" title="Опубликовать ссылку в Твиттере">Twitter</a>
+				<a class="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</a>
+				<a class="vkontakte" title="Опубликовать ссылку во Вконтакте">Вконтакте</a>
+				<a class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках">Одноклассники</a>
+				<a class="plusone" title="Плюсануть в Гугле">Google+</a>
+			</ul>
+		</td>
+    <td style="vertical-align:top; 	padding-left:40px">
+			<h3>Vertical (light & dark background)</h3>
+      <div class="dark-bg">
+        <ul class="social-likes social-likes_vertical social-likes_light" data-url="http://sapegin.github.io/social-likes/" data-title="Свой текст">
+          <button class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</button>
+          <button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" data-url="http://github.com" data-title="Не #mail_ru" title="Опубликовать ссылку в Твиттере">Twitter</button>
+          <button class="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</button>
+          <button class="vkontakte" title="Опубликовать ссылку во Вконтакте">Вконтакте</button>
+          <button class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках">Одноклассники</button>
+          <button class="plusone" title="Плюсануть в Гугле">Google+</button>
+        </ul>
+      </div>
+		</td>
+	</tr>
+</table>
+
+	<h3>Vertical (no counters)</h3>
+	<ul class="social-likes social-likes_vertical" data-counters="no">
+		<button class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</button>
+		<button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" data-url="http://github.com" data-title="Не #mail_ru" title="Опубликовать ссылку в Твиттере">Twitter</button>
+	</ul>
+
+	<h3>Vertical (with zeroes)</h3>
+	<ul class="social-likes social-likes_vertical" data-zeroes="yes">
+		<button class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</button>
+		<button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" data-url="http://github.com" data-title="Не #mail_ru" title="Опубликовать ссылку в Твиттере">Twitter</button>
+	</ul>
+
+	<!--<h3>Single button</h3>
+	<section>
+		<ul class="social-likes social-likes_single" data-url="http://maill.ru/">
+			<button class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</button>
+			<button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" title="Опубликовать ссылку в Твиттере">Twitter</button>
+			<button class="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</button>
+			<button class="vkontakte" title="Опубликовать ссылку во Вконтакте">Вконтакте</button>
+			<button class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках">Одноклассники</button>
+			<button class="plusone" title="Плюсануть в Гугле">Google+</button>
+			<button class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Pinterest">Pinterest</button>
+		</ul>
+	</section>
+	<section style="padding-left:100px">
+		<div class="social-likes social-likes_single social-likes_light" data-url="http://mail.ru/">
+			<div class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</div>
+			<div class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" title="Опубликовать ссылку в Твиттере">Twitter</div>
+			<div class="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</div>
+			<div class="vkontakte" title="Опубликовать ссылку во Вконтакте">Вконтакте</div>
+			<div class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках">Одноклассники</div>
+			<div class="plusone" title="Плюсануть в Гугле">Google+</div>
+			<div class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Pinterest">Pinterest</div>
+		</div>
+	</section>
+	<section>
+		<ul class="social-likes social-likes_single social-likes_light social-likes_single-light" data-url="http://mail.ru/" data-single-title="Share me">
+			<button class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</button>
+			<button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" title="Опубликовать ссылку в Твиттере">Twitter</button>
+			<button class="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</button>
+		</ul>
+	</section>-->
+
+	<h3>Icons only</h3>
+	<ul class="social-likes social-likes_notext" data-counters="no" data-url="http://maps.mail.ru/">
+		<button class="facebook" title="Опубликовать ссылку на Фейсбуке"></button>
+		<button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" data-url="http://github.com" data-title="Не #mail_ru" title="Опубликовать ссылку в Твиттере"></button>
+		<button class="mailru" title="Опубликовать ссылку в Моём мире"></button>
+		<button class="vkontakte" title="Опубликовать ссылку во Вконтакте"></button>
+		<button class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках"></button>
+		<button class="plusone" title="Плюсануть в Гугле"></button>
+		<!--<button class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Pinterest"></button>-->
+	</ul>
+
+	<h3>Icons only (no counters)</h3>
+	<ul class="social-likes social-likes_notext" data-url="http://mail.ru/" data-counters="no">
+		<button class="facebook" title="Опубликовать ссылку на Фейсбуке"></button>
+		<button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" data-url="http://github.com" data-title="Не #mail_ru" title="Опубликовать ссылку в Твиттере"></button>
+		<button class="mailru" title="Опубликовать ссылку в Моём мире"></button>
+		<button class="vkontakte" title="Опубликовать ссылку во Вконтакте"></button>
+		<button class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках"></button>
+		<button class="plusone" title="Плюсануть в Гугле"></button>
+		<!--<button class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Pinterest"></button>-->
+	</ul>
+
+	<h3>Icons only (light)</h3>
+	<ul class="social-likes social-likes_notext social-likes_light" data-url="http://maps.mail.ru/">
+		<button class="facebook" title="Опубликовать ссылку на Фейсбуке"></button>
+		<button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" data-url="http://github.com" data-title="Не #mail_ru" title="Опубликовать ссылку в Твиттере"></button>
+		<button class="mailru" title="Опубликовать ссылку в Моём мире"></button>
+		<button class="vkontakte" title="Опубликовать ссылку во Вконтакте"></button>
+		<button class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках"></button>
+		<button class="plusone" title="Плюсануть в Гугле"></button>
+		<!--<button class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Pinterest"></button>-->
+	</ul>
+
+	<h3>Icons only (light, no counters)</h3>
+	<ul class="social-likes social-likes_notext social-likes_light" data-url="http://mail.ru/" data-counters="no">
+		<button class="facebook" title="Опубликовать ссылку на Фейсбуке"></button>
+		<button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" data-url="http://github.com" data-title="Не #mail_ru" title="Опубликовать ссылку в Твиттере"></button>
+		<button class="mailru" title="Опубликовать ссылку в Моём мире"></button>
+		<button class="vkontakte" title="Опубликовать ссылку во Вконтакте"></button>
+		<button class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках"></button>
+		<button class="plusone" title="Плюсануть в Гугле"></button>
+		<!--<button class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Pinterest"></button>-->
+	</ul>
+
+	<h3>Custom font-size</h3>
+	<ul class="social-likes" data-url="http://mail.ru/" style="font-size:30px">
+		<button class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</button>
+		<button class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" title="Опубликовать ссылку в Твиттере">Twitter</button>
+		<button class="mailru" title="Опубликовать ссылку в Моём мире">Мой мир</button>
+		<button class="vkontakte" title="Опубликовать ссылку во Вконтакте">Вконтакте</button>
+		<button class="odnoklassniki" title="Опубликовать ссылку в Одноклассниках">Одноклассники</button>
+		<button class="plusone" title="Опубликовать ссылку в Гугл-плюсе">Google+</button>
+		<!--<button class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Пинтересте">Pinterest</button>-->
+	</ul>
+
+	<h3>Old initialization HTML</h3>
+	<ul class="social-likes">
+		<button class="facebook"><a href="#" title="Опубликовать ссылку на Фейсбуке">Facebook</a></button>
+		<button class="twitter"><a href="#" data-via="sapegin" data-related="DessiTeckel:Моя такса" title="Опубликовать ссылку в Твиттере">Twitter</a></button>
+	</ul>
+
+	<h3>Manual initialization</h3>
+	<div id="social-likes-manual" data-url="http://mail.ru/">
+		<div class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</div>
+		<div class="twitter" data-via="sapegin" data-related="DessiTeckel:Моя такса" title="Опубликовать ссылку в Твиттере">Twitter</div>
+		<!--<div class="pinterest" data-media="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/8/20/11/anigif_enhanced-buzz-31256-1377012172-9.gif" title="Опубликовать ссылку в Пинтересте">Pinterest</div>-->
+	</div>
+	<p><a href="#" id="social-likes-update">Change URL</a>, <a href="#" id="social-likes-update-force">Force update</a></p>
+<script>
+var sl = $('#social-likes-manual');
+sl.on('counter.social-likes', function(event, service, number) {
+	console.log('Counter', service, number);
+});
+sl.on('popup_opened.social-likes', function(event, service, win) {
+	console.log('Popup opened', service, win);
+});
+sl.on('popup_closed.social-likes', function(event, service) {
+	console.log('Popup closed', service);
+	$(event.currentTarget).socialLikes({forceUpdate: true});  // Update counters
+});
+sl.socialLikes();
+$('#social-likes-update').click(function() {
+	sl.socialLikes({
+		url: 'https://github.com/sapegin/grunt-webfont/',
+		title: 'SVG to webfont converter for Grunt',
+		data: {
+			media: 'http://birdwatcher.ru/i/userpic.jpg'
+		}
+	});
+	return false;
+});
+$('#social-likes-update-force').click(function() {
+	sl.socialLikes({forceUpdate: true});
+	return false;
+});
+</script>
+
+	<h3>Manual initialization with JavaScript options</h3>
+	<ul id="social-likes-manual-options">
+		<button class="facebook" title="Опубликовать ссылку на Фейсбуке">Facebook</button>
+	</ul>
+	
+<script>
+$('#social-likes-manual-options').socialLikes({
+	url: 'https://github.com/sapegin/social-likes/',
+	title: 'Beautiful “like” buttons with counters for popular social networks',
+	counters: true,
+	zeroes: false
+});
+</script>
+
+	<!--<h3>User button &amp; custom count</h3>
+<script>
+var socialLikesButtons = {
+	surfingbird: {
+		clickUrl: 'http://surfingbird.ru/share?url={url}',
+		//popupUrl: 'http://surfingbird.ru/share?url={url}',
+		pupupWidth: 650,
+		popupHeight: 500
+	}
+};
+</script>
+<style>
+.social-likes__button_surfingbird {
+	background: #f2f3f5;
+	color: #596e7e;
+	border-color: #ced5e2;
+	}
+.social-likes__icon_surfingbird {
+	background: url(http://surfingbird.ru/img/share-icon.png) no-repeat 2px 3px;
+	}
+</style>
+	<div class="social-likes">
+		<div class="surfingbird" data-counter="666">Surf</button>
+	</div>
+
+	</div>-->
+
+<script>
+if ('localStorage' in window) {
+	$('body').toggleClass('show-grid', localStorage.getItem('show-grid') === 'true');
+	$('#grid').click(function(e) {
+		$('body').toggleClass('show-grid');
+		localStorage.setItem('show-grid', $('body').hasClass('show-grid'));
+		e.preventDefault();
+	});
+}
+</script>
+</body>
+</html>

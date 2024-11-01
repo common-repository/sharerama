@@ -1,0 +1,82 @@
+@import '_base'
+@import 'fonts/sharerama.css'
+
+$margin = .4 // em
+$vertical-padding = .1 // em
+$horizontal-padding = $margin * 2 //em
+$icon-size = 1.1 // em
+$counter-size = .8 // em
+
+$textColor = #555
+$backgroundColor = #fff
+$facebookColor = #3d5b95
+$twitterColor = #24aadd
+$googleColor = #d23e30
+
+$text-shadow = 0 -1px 0 rgba(#000, .1)
+$box-shadow = 0 1px 3px rgba(#000, .2)
+$box-shadow--inset = $box-shadow inset
+
+$button($services, $color = $textColor)
+	for $service in $services
+		&[data-service=\'{$service}\']
+			+$link()
+				.sharerama &
+					border-color $color
+					color $backgroundColor
+					background-color $color
+				.sharerama--light &
+					color $color
+					background-color $backgroundColor
+				.sharerama--monochrome &
+					border-color $textColor
+					background-color $textColor
+				.sharerama--monochrome.sharerama--light &
+					color $textColor
+					background-color $backgroundColor
+			+$hover()
+				.sharerama--light &
+				.sharerama--monochrome &
+				.sharerama--monochrome.sharerama--light &
+					border-color $color
+					color $backgroundColor
+					background-color $color
+
+
+.sharerama
+	font-size 14px !important
+	line-height 1.5 !important
+	font-family sans-serif
+	margin -($margin)em
+	&--vertical
+		margin-bottom -($margin * 2)em
+	&__item
+		margin ($margin)em
+		.sharerama--vertical &
+			margin-bottom ($margin * 2)em
+	&__button
+		border 1px solid
+		border-radius 3px
+		padding ($vertical-padding)em ($horizontal-padding)em
+		&:before
+			margin-right .33em
+		&:empty
+			&:before
+				margin-right 0
+		+$hover()
+			opacity .9
+			box-shadow $box-shadow
+			.sharerama--light &
+				opacity 1
+		&:active
+			box-shadow $box-shadow--inset
+			transform translate3d(0, 1px, 0)
+		text-shadow $text-shadow
+		.sharerama--light &
+			text-shadow none
+			+$hover()
+				text-shadow $text-shadow
+		$button('facebook', $facebookColor)
+		$button('twitter', $twitterColor)
+		$button('google', $googleColor)
+

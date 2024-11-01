@@ -1,0 +1,189 @@
+// Social Likes by Artem Sapegin. http://sapegin.github.io/social-likes/
+// Sharerama skin
+// Design: Artem Polikarpov, http://sharerama.com/
+
+@import '../base'
+@import 'font/sharerama'
+
+margin = .5; // em
+vertical_padding = .1; // em
+horizontal_padding = .7; //em
+icon_size = 1.1; // em
+counter_size = .8; // em
+text = #555;
+
+button-colors(button, color) {
+  .social-likes .social-likes__widget_{button} {
+    background: color;
+    border-color: color !important;
+    &:hover,
+    &:focus {
+      background-color: color !important;
+      border-color: color !important;
+    }
+  }
+	.social-likes_light .social-likes__widget_{button} {
+		color: color !important;
+	}
+}
+
+.social-likes {
+  min-height: 40px;
+  margin: (-(margin)em);
+  user-select: none;
+
+  &,
+  &_single-w {
+    line-height: 1.5;
+  }
+
+  &,
+  &__widget_single {
+    font-size: 14px; // Base font size
+  }
+
+  &__widget {
+    margin: ((margin)em) !important;
+    line-height: 1.5 !important;
+    text-align: left !important;
+    cursor: pointer !important;
+    border: 1px solid !important;
+		text-decoration: none !important;
+    border-radius: .15em !important;
+    overflow: hidden !important;
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(#000, .1) !important;
+    transform: translate3d(0, 0, 0) !important;
+
+    text-transform: none !important;
+		padding: 0 !important;
+		font: inherit !important; /* Correct font properties not being inherited for <button> tag */
+
+    .social-likes_light & {
+      background-color: rgba(#fff, .9) !important;
+      opacity: 1 !important;
+      text-shadow: none !important;
+    }
+
+    .social-likes.social-likes_nocolor & {
+      background-color: text !important;
+      border-color: text !important;
+    }
+
+    .social-likes_nocolor.social-likes_light & {
+      background-color: rgba(#fff, .9) !important;
+      color: text !important;
+    }
+
+    opacity: .9;
+    transition: .5s ease-out;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      transition-duration: .06s;
+      .social-likes.social-likes_light & {
+        color: #fff !important;
+        text-shadow: 0 -1px 0 rgba(#000, .1) !important;
+      }
+    }
+
+    &:active {
+      transform: translate3d(0, 1px, 0);
+    }
+  }
+
+  &__button,
+  &__counter {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    vertical-align: baseline;
+  }
+
+  &__button {
+    padding: ((vertical_padding)em) ((horizontal_padding)em);
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  &__icon {
+    position: relative;
+    font-family: "sharerama";
+    font-weight: normal;
+    font-style: normal;
+    speak: none;
+    text-transform: none;
+    font-size: (icon_size)em;
+		margin-left: ((marin - horizontal_padding)em);
+    margin-right: .33em;
+    vertical-align: middle;
+  }
+
+  &__counter {
+    padding-right: (horizontal_padding)em;
+    font-weight: normal;
+    font-size: (counter_size)em;
+  }
+
+  // Vertical mode
+  &_vertical {
+    .social-likes__widget {
+      display: table !important;
+      border-collapse: collapse !important;
+      width: 100% !important;
+    }
+    .social-likes__button,
+    .social-likes__counter {
+      display: table-cell;
+    }
+    .social-likes__counter {
+        text-align: right;
+    }
+  }
+
+  // Icons only mode
+  &_notext {
+    .social-likes__button {
+      padding-left: 0;
+			padding-right: 0;
+			margin-right: 0;
+			text-align: center;
+			min-width: 2em;
+    }
+    .social-likes__icon {
+      margin-right: 0;
+    }
+  }
+}
+
+
+
+// Facebook
+$facebook = #3d5b95;
+button-colors('facebook', $facebook);
+
+// Twitter
+$twitter = #24aadd;
+button-colors('twitter', $twitter);
+
+// Google+
+$plusone = #d23e30;
+button-colors('plusone', $plusone);
+
+// Mail.ru
+$mailru = #00468c;
+button-colors('mailru', $mailru);
+
+// Vkontakte
+$vkontatke = #587e9f;
+button-colors('vkontakte', $vkontatke);
+
+// Odnoklassniki
+$odnoklassniki = #f59310;
+button-colors('odnoklassniki', $odnoklassniki);
+
+// Pinterest
+//$pinterest = #cb132d;
+//button-colors('pinterest', $pinterest);
+

@@ -1,0 +1,16 @@
+@font-face {
+	font-family: sharerama;
+	src: <%= fontSrc2 %>;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.sharerama__button:before {
+	font-family: sharerama;
+	vertical-align: middle;
+}
+
+<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+.sharerama__button[data-service='<%= glyphs[glyphIdx] %>']:before {
+	content: '\<%= codepoints[glyphIdx] %>';
+}<% } %>

@@ -1,0 +1,23 @@
+.sharerama
+	text-rendering optimizeLegibility
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	&
+	&__item
+		list-style none
+		margin 0
+		padding 0
+		font-size inherit !important
+		line-height inherit !important
+	&__item
+		display inline-block
+		vertical-align top
+		.sharerama--vertical &
+			display block
+	&__button
+		display inline-block
+		text-decoration none !important
+		transform translate3d(0, 0, 0)
+		transition .5s ease-out
+		+$hover()
+			transition-duration .06s
